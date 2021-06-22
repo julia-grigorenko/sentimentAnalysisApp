@@ -28,3 +28,6 @@
 3. Start server `node ./bin/www` or `npm start`
 4. Open in browser `http://localhost:3000`
 5. Enter some sample text in textarea and you will see the emoji reflects the sentiment below.
+
+Based on and modified: https://blog.logrocket.com/sentiment-analysis-node-js/,
+https://github.com/ffd8/sentilyzer
