@@ -15,17 +15,17 @@ const submitReview = (e) => {
       .then(res => res.json())
       .then (({ analysis }) => {
         if (analysis < 0) {
-          emojiSection.innerHTML = '<img src="https://img.icons8.com/emoji/96/000000/angry-face.png">';
+          emojiSection.innerHTML = '<img src="../img/angry.png">';
           title.style.color = 'red';
           outline.style.borderColor = 'red';
         };
         if (analysis === 0) {
-          emojiSection.innerHTML = '<img src="https://img.icons8.com/officel/80/000000/neutral-emoticon.png">';
+          emojiSection.innerHTML = '<img src="../img/neutral.png">';
           title.style.color = '#00367c';
           outline.style.borderColor = '#00367c';
         }
         if (analysis > 0) {
-          emojiSection.innerHTML = '<img src="https://img.icons8.com/color/96/000000/happy.png">';
+          emojiSection.innerHTML = '<img src="../img/happy.png">';
           title.style.color = 'green';
           outline.style.borderColor = 'green'
         }

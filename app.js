@@ -3,6 +3,7 @@ const path = require('path');
 const logger = require('morgan');
 require('dotenv').config();
 const nlpRouter = require('./routes/nlp');
+// const getApiRouter = require('./routes/getAPI');
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use('/', getApiRouter);
 app.use('/api/nlp', nlpRouter);
 
 
